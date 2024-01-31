@@ -125,6 +125,15 @@
                 margin-top: -550px;
             }
         }
+        .accordion-button:not(.collapsed) {
+            color: #6c805e;
+            background-color: unset;
+        }
+        .accordion-button:focus {
+            z-index: 3;
+            border-color: unset;
+            box-shadow: 0 0 0 1px rgb(108, 128, 94);
+        }
     </style>
     <style data-emotion="css 1c9a4c6" data-s="">
         .css-1c9a4c6 {
@@ -1050,62 +1059,196 @@
                     </p>
                 </div>
             </header>
-            <div class="added-custom container">
-                <h4 class="css-1n4c055 text-center">Lễ Đính Hôn</h4>
-                <p class="fs-6 fst-italic text-center">21/01/2024</p>
-                <div id="engagementDateCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-touch="true">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./images/engagement-date/PT2_2089.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./images/engagement-date/PT1_4925.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./images/engagement-date/PT2_3557.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./images/engagement-date/PT2_3081.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./images/engagement-date/PT2_3106.jpg" class="d-block w-100" alt="...">
+            <div class="accordion accordion-flush added-custom container" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button d-inline-block css-1n4c055 text-center" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                            Lễ Đính Hôn
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body p-0">
+                            <div class="added-custom">
+                                <p class="fs-6 fst-italic text-center">21/01/2024</p>
+                                <p class="fs-6 fst-italic text-center">Phần hình dọc</p>
+                                <div id="engagementDateCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="10000" data-bs-touch="true">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="./images/engagement-date/PT2_2738.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/engagement-date/PT2_2055.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/engagement-date/PT2_2039.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/engagement-date/PT2_3557.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/engagement-date/PT2_3081.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/engagement-date/PT2_3106.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/engagement-date/PT2_3109.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/engagement-date/PT2_2412.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/engagement-date/PT2_2445.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/engagement-date/PT2_2089.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/engagement-date/PT2_2210.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/engagement-date/PT2_3606.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/engagement-date/PT1_4559.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#engagementDateCarousel" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#engagementDateCarousel" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="added-custom">
+                                <p class="fs-6 fst-italic text-center">Phần hình ngang</p>
+                                <div id="engagementDateCarousel2" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="10000" data-bs-touch="true">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="./images/engagement-date/PT1_4533.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/engagement-date/PT1_5222.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/engagement-date/PT1_4959.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/engagement-date/PT1_4925.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/engagement-date/PT1_4604.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/engagement-date/PT2_2238.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/engagement-date/PT1_4611.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/engagement-date/PT1_4650.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/engagement-date/PT1_4661.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/engagement-date/PT1_4705.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/engagement-date/PT1_4728.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/engagement-date/PT1_5171.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/engagement-date/PT1_5115.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/engagement-date/PT1_5148.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/engagement-date/PT2_2806.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/engagement-date/PT2_3056.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/engagement-date/PT2_3116.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#engagementDateCarousel2" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#engagementDateCarousel2" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#engagementDateCarousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#engagementDateCarousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
-            </div>
-            <div class="added-custom container">
-                <h4 class="css-1n4c055 text-center lh-sm">Gửi Quà Chúc Đến Cô Dâu và Chú Rể</h4>
-                <div class="time-location-box mx-auto">
-                    <div class="css-31a8ia text-center">
-                        <span class="material-symbols-outlined">featured_seasonal_and_gifts</span>
-                        <p>
-                            LÊ BÙI BẢO DUY - 9017041471604 (Timo by Ban Viet Bank)
-                            <br>
-                            LÊ TRẦN THANH NGUYÊN - 103873083696 (Vietin Bank)
-                        </p>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button d-inline-block css-1n4c055 text-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            Lễ Cưới
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body p-0">
+                        </div>
                     </div>
                 </div>
-                <div class="container mt-5">
-                    <div class="row justify-content-center">
-                        <div class="col-sm-6">
-                            <img src="./images/send-gift/timo-bank.jpg" class="img-fluid" alt="...">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button d-inline-block  css-1n4c055 text-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            Pre-wedding
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body p-0">
                         </div>
-                        <div class="col-sm-6">
-                            <img src="./images/send-gift/momo.jpg" class="img-fluid" alt="...">
-                        </div>
-                        <div class="w-100"></div>
-                        <div class="col-sm-6 mt-2 mx-auto text-center align-self-center">
-                            <a href="https://me.momo.vn/ReI4uZI8iNs2F3iVFaub">
-                                <img src="./images/send-gift/momo-button.png" alt="Gửi lời chúc qua Momo">
-                            </a>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                        <button class="accordion-button d-inline-block  css-1n4c055 text-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                            Gửi Quà Chúc Đến Cô Dâu và Chú Rể
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body p-0">
+                            <div class="time-location-box mx-auto">
+                                <div class="css-31a8ia text-center">
+                                    <span class="material-symbols-outlined">featured_seasonal_and_gifts</span>
+                                    <p>
+                                        LÊ BÙI BẢO DUY - 9017041471604 (Timo by Ban Viet Bank)
+                                        <br>
+                                        LÊ TRẦN THANH NGUYÊN - 103873083696 (Vietin Bank)
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container mt-5">
+                                <div class="row justify-content-center">
+                                    <div class="col-sm-6">
+                                        <img src="./images/send-gift/timo-bank.jpg" class="img-fluid" alt="...">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <img src="./images/send-gift/momo.jpg" class="img-fluid" alt="...">
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="col-sm-6 mt-2 mx-auto text-center align-self-center">
+                                        <a href="https://me.momo.vn/ReI4uZI8iNs2F3iVFaub">
+                                            <img src="./images/send-gift/momo-button.png" alt="Gửi lời chúc qua Momo">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
