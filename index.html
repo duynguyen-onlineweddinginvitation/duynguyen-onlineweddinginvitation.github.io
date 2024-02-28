@@ -1279,12 +1279,15 @@
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function () {
         var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-            document.getElementById("scroll-to-top-sp").style.top = "0";
-        } else {
-            document.getElementById("scroll-to-top-sp").style.top = "-60px";
+        console.log(currentScrollPos);
+        if (currentScrollPos > 55) {
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("scroll-to-top-sp").style.top = "0";
+            } else {
+                document.getElementById("scroll-to-top-sp").style.top = "-60px";
+            }
+            prevScrollpos = currentScrollPos;
         }
-        prevScrollpos = currentScrollPos;
     }
 </script>
 
