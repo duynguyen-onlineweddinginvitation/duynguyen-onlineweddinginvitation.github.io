@@ -27,14 +27,27 @@
             font-family: Babylonica;
             src: url('./fonts/Babylonica-Regular.ttf');
         }
+        @font-face {
+            font-family: PinyonScript;
+            src: url('./fonts/PinyonScript-Regular.ttf');
+        }
         body  {
             font-family: Cormorant;
+        }
+        .special-font {
+           font-family: PinyonScript,serif !important;
         }
         .section-divider {
             width: 100%;
         }
         .section-border-bottom-custom {
             border-bottom: 1px solid #494b48;
+        }
+        .lh-p {
+            line-height: 1.5;
+        }
+        .hover-momo:hover {
+            filter: drop-shadow(2px 4px 6px #b02072);
         }
         .hy-word  {
             font-family: Babylonica;
@@ -151,7 +164,7 @@
     </style>
     <style data-emotion="css xdcd7r" data-s="">
         .css-xdcd7r {
-        height: 56px;
+        height: 53px;
         width: 100%;
     }
 
@@ -204,7 +217,7 @@
         font-family: Cormorant;
         color: #494b48;
         font-size: 62px;
-        text-transform: uppercase;
+        /*text-transform: uppercase;*/
         letter-spacing: 8px;
         font-weight: 400;
         padding-bottom: 15px;
@@ -212,7 +225,7 @@
 
     @media (max-width: 640px) {
         .css-1u6o2pd {
-            font-size: calc(62px * 0.75);
+            font-size: calc(58px * 0.75);
         }
     }
 
@@ -226,7 +239,7 @@
     @media (max-width: 768px) {
         .css-1u6o2pd {
             letter-spacing: 4px;
-            font-size: calc(62px * 0.75);
+            font-size: calc(58px * 0.75);
         }
     }
 
@@ -390,7 +403,7 @@
     }</style>
     <style data-emotion="css 2z2po7" data-s="">
     .css-2z2po7 {
-        height: 56px;
+        height: 52px;
         left: 0;
         position: fixed;
         top: 0;
@@ -400,6 +413,7 @@
         -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
         -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
         box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+        transition: top 0.3s;
     }
 
     @media (min-width: 768px) {
@@ -423,10 +437,9 @@
         -webkit-justify-content: center;
         justify-content: center;
         width: 100%;
-        font-family: Cormorant;
+        font-family: PinyonScript,serif !important;
         color: #494b48;
         font-size: 32px;
-        text-transform: uppercase;
         letter-spacing: 2px;
         font-weight: 400;
     }
@@ -994,26 +1007,30 @@
                 <img loading="eager" alt=""
                      src="https://media-api.xogrp.com/images/9351e993-f7aa-47f9-831b-d9b64c3888c6~rt_auto-rs_1024.h?ordering=explicit"
                      class="css-1ago99h"></picture>
-            <div class="css-2z2po7"><h2 class="css-8uks5n">D&amp;N</h2></div>
+            <div id="scroll-to-top-sp" class="css-2z2po7" onclick="window.scrollTo(0, 0);">
+                <h2 class="css-8uks5n">Duy&amp;Nguyên</h2>
+            </div>
             <header class="css-ou2xl5">
                 <div class="hy-word mx-auto">Hỷ</div>
-                <h1 data-testid="header-couple-names" class="css-1u6o2pd">
-                    Bảo Duy <br>&amp;<br> Thanh Nguyên
-                </h1>
+                <div data-testid="header-couple-names" class="css-1u6o2pd special-font">
+                    <div>Bảo Duy</div>
+                    <div style="margin: 12px 0">&</div>
+                    <div>Thanh Nguyên</div>
+                </div>
                 <div class="time-location-box mx-auto">
                     <div data-testid="header-wedding-date-location" class="css-31a8ia">
                         <span class="material-symbols-outlined">calendar_month</span>
-                        <p>
+                        <p class="lh-p">
                             Lễ Cưới được tổ chức vào lúc
                             <br>
-                            10 giờ sáng, chủ nhật, ngày 07/04/2024
+                            11 giờ sáng, Thứ bảy, Ngày 30/03/2024
                             <br>
-                            (Nhằm 29/2 Âm lịch)
+                            (Nhằm Ngày 21 Tháng 2 Âm lịch)
                         </p>
                     </div>
                     <div data-testid="header-wedding-date-location" class="css-31a8ia">
                         <span class="material-symbols-outlined">location_on</span>
-                        <p>
+                        <p class="lh-p">
                             Tại Nhà Hàng Vạn Phát
                             <br> Số 2 Nguyễn Văn Cừ (KV3, Cồn Khương)
                             <br> P. Cái Khế, Q. Ninh Kiều, TP. Cần Thơ
@@ -1021,7 +1038,7 @@
                     </div>
                 </div>
                 <div class="greeting-quote text-center">
-                    <p>
+                    <p class="lh-p">
                         "Sự có mặt của quý khách sẽ đem lại rất nhiều vinh hạnh và niềm vui cho chúng tôi.
                         Cảm ơn quý khách vì đã trở thành một phần quan trọng trong ngày đặc biệt trọng đại này của chúng tôi!"
                     </p>
@@ -1212,7 +1229,7 @@
                                     <div class="w-100"></div>
                                     <div class="col-sm-6 mt-2 mx-auto align-self-center">
                                         <a class="d-block" href="https://me.momo.vn/ReI4uZI8iNs2F3iVFaub">
-                                            <img class="w-100" src="./images/send-gift/momo-button.png" alt="Gửi lời chúc qua Momo">
+                                            <img class="w-100 hover-momo" src="./images/send-gift/momo-button.png" alt="Gửi lời chúc qua Momo">
                                         </a>
                                     </div>
                                 </div>
@@ -1225,7 +1242,7 @@
         <footer class="css-rzmzie">
             <div class="css-10xb0p9">
                 <div class="css-16k1bjq">D&amp;N</div>
-                <div class="css-ffdob3">07.04.2024</div>
+                <div class="css-ffdob3">03.30.2024</div>
             </div>
             <picture class="css-7tseg">
                 <source media="(min-resolution: 192dpi) and (min-width: 1280px),(-webkit-min-device-pixel-ratio: 2) and (min-width: 1280px)"
@@ -1257,6 +1274,19 @@
         </footer>
     </div>
 </div>
+
+<script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("scroll-to-top-sp").style.top = "0";
+        } else {
+            document.getElementById("scroll-to-top-sp").style.top = "-60px";
+        }
+        prevScrollpos = currentScrollPos;
+    }
+</script>
 
 </body>
 </html>
