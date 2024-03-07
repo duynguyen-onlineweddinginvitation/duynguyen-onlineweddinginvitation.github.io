@@ -37,6 +37,28 @@
         .special-font {
            font-family: PinyonScript,serif !important;
         }
+        .bold-lines {
+            font-weight: bold;
+            color: #6a8b51;
+        }
+        .italic-lines {
+            font-style: italic;
+            font-weight: bold;
+        }
+        .gradient-effect {
+            color: transparent;
+            background:
+                    linear-gradient(90deg, #ff0000 0%, #4da82e 10%, #0fd946 20%, #094908 30%, #3fdad8 40%, #2fc9e2 50%, #1c7fee 60%, #5f15f2 70%, #ba0cf8 80%, #fb07d9 90%, #ff0000 100%)
+                    left/200% 100%; /* 200% = twice the width*/
+            -webkit-background-clip: text;
+            background-clip: text;
+            animation: move 2s linear infinite;
+        }
+        @keyframes move {
+            to {
+                background-position: -200% 0;
+            }
+        }
         .section-divider {
             width: 100%;
         }
@@ -1023,9 +1045,9 @@
                         <p class="lh-p">
                             Lễ Cưới được tổ chức vào lúc
                             <br>
-                            11 giờ sáng, Thứ bảy, Ngày 30/03/2024
+                            <span class="bold-lines gradient-effect"> 11 giờ sáng, Thứ bảy, Ngày 30/03/2024 </span>
                             <br>
-                            (Nhằm Ngày 21 Tháng 2 Âm lịch)
+                            <span class="italic-lines">(Nhằm Ngày 21 Tháng 2 Âm lịch)</span>
                         </p>
                     </div>
                     <div data-testid="header-wedding-date-location" class="css-31a8ia">
@@ -1200,49 +1222,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingFour">
-                        <button class="accordion-button d-inline-block  css-1n4c055 text-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
-                            Gửi Quà Chúc Đến Cô Dâu và Chú Rể
-                        </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
-                        <div class="accordion-body p-0">
-                            <div class="time-location-box mx-auto">
-                                <div class="css-31a8ia text-center">
-                                    <span class="material-symbols-outlined">featured_seasonal_and_gifts</span>
-                                    <p>
-                                        LÊ BÙI BẢO DUY - 9017041471604 (Timo by Ban Viet Bank)
-                                        <br>
-                                        LÊ TRẦN THANH NGUYÊN - 103873083696 (Vietin Bank)
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="mt-5">
-                                <div class="row justify-content-center">
-                                    <div class="col-sm-6">
-                                        <img src="./images/send-gift/timo-bank.jpg" class="img-fluid" alt="...">
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <img src="./images/send-gift/momo.jpg" class="img-fluid" alt="...">
-                                    </div>
-                                    <div class="w-100"></div>
-                                    <div class="col-sm-6 mt-2 mx-auto align-self-center">
-                                        <a class="d-block" href="https://me.momo.vn/ReI4uZI8iNs2F3iVFaub">
-                                            <img class="w-100 hover-momo" src="./images/send-gift/momo-button.png" alt="Gửi lời chúc qua Momo">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
         <footer class="css-rzmzie">
             <div class="css-10xb0p9">
                 <div class="css-16k1bjq">D&amp;N</div>
-                <div class="css-ffdob3">30.03.2024</div>
+                <div class="css-ffdob3">Thứ Bảy, 30.03.2024</div>
             </div>
             <picture class="css-7tseg">
                 <source media="(min-resolution: 192dpi) and (min-width: 1280px),(-webkit-min-device-pixel-ratio: 2) and (min-width: 1280px)"
